@@ -6,11 +6,12 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            if (args.Length > 0) {
-                Console.WriteLine($"Hello {args[0]}!");
-            } else {
-                Console.WriteLine("Hello!");
-            }
+            var book = new Book("Raj's new Grade Book");
+            book.AddGrade(89.1);
+            book.AddGrade(20.1);
+            book.AddGrade(10.1);
+            book.AddGrade(50.1);
+            book.ShowStatistics();
         }
     }
 }
